@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "Cobe";
+  
+  src: url("./assets/fonts/CobeSemiBoldItalic.ttf") format("truetype"),
+       url("./assets/fonts/CobeSemiBoldItalic.woff") format("woff"),
+       url("./assets/fonts/CobeSemiBoldItalic.woff2") format("woff2"); 
+  font-weight: 800; 
+  font-style: italic;
+  font-display: swap;
+} 
+*/
+@font-face {
+  font-family: "Cobe";
+  src: url("./assets/fonts/CobeSemiBoldItalic.woff2") format("woff2"),
+       url("./assets/fonts/CobeSemiBoldItalic.woff") format("woff"),
+       url("./assets/fonts/CobeSemiBoldItalic.ttf") format("truetype");
+  
+  /* REMOVED: font-weight and font-style are applied via JS/Tailwind */
+  font-display: swap; 
+}
+
+/* ----------------------------------------------------
+  NEW: Fallback Styles 
+  The default state uses a fallback (sans-serif).
+  The final styles are applied conditionally.
+---------------------------------------------------- */
+.font-cobe {
+  font-family: "sans-serif"; /* Default to a system font until loaded */
+}
+
+/* ----------------------------------------------------
+  NEW: Loaded Styles
+  Once the JS sets the 'cobe-loaded' class on the body, 
+  these rules take precedence.
+---------------------------------------------------- */
+body.cobe-loaded .font-cobe {
+  font-family: "Cobe", "sans-serif"; /* Apply the custom font */
+  font-weight: 600; /* Apply Semi-Bold (Tailwind class will override if present) */
+  font-style: italic; /* Apply Italic (Tailwind class will override if present) */
+}
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 203 46% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 203 46% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 203 46% 16%;
+
+    /* Brand colors: #1a2e40 = hsl(203, 46%, 16%) */
+    --primary: 203 46% 16%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 203 20% 96%;
+    --secondary-foreground: 203 46% 16%;
+
+    --muted: 203 20% 96%;
+    --muted-foreground: 203 20% 45%;
+
+    /* Accent color: #2ab8a6 = hsl(171, 64%, 45%) */
+    --accent: 171 64% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 203 20% 90%;
+    --input: 203 20% 90%;
+    --ring: 171 64% 45%;
+
+    --radius: 0.5rem;
+
+    /* Additional brand tokens */
+    --hero-gradient-start: 203 46% 16%;
+    --hero-gradient-end: 203 46% 24%;
+    --accent-light: 171 64% 95%;
+    --accent-hover: 171 64% 40%;
+  }
+
+  .dark {
+    --background: 203 46% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 203 46% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 203 46% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 203 46% 16%;
+
+    --secondary: 203 30% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 203 30% 18%;
+    --muted-foreground: 203 20% 65%;
+
+    --accent: 171 64% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 203 30% 20%;
+    --input: 203 30% 20%;
+    --ring: 171 64% 45%;
+
+    --hero-gradient-start: 203 46% 12%;
+    --hero-gradient-end: 203 46% 16%;
+    --accent-light: 171 64% 20%;
+    --accent-hover: 171 64% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
