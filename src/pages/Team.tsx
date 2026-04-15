@@ -8,7 +8,7 @@ import teamHeroImage from "@/assets/team-hero.jpg";
 import veraImage from "@/assets/team-vera.jpg";
 import robertImage from "@/assets/team-Hennessy.png";
 import marcImage from "@/assets/team-Marc.jpg";
-import michaelImage from "@/assets/team-Michael.jpg";
+import michaelImage from "@/assets/team-Michael.png";
 
 const Team = () => {
   return (
