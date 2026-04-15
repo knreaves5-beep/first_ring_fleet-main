@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 import teamHeroImage from "@/assets/team-hero.jpg";
 import veraImage from "@/assets/team-vera.jpg";
 import robertImage from "@/assets/team-Hennessy.png";
-
-
+import marcImage from "@/assets/team-Marc.png";
+import michaelImage from "@/assets/team-Michael.png";
 
 const Team = () => {
   return (
@@ -199,6 +199,82 @@ const Team = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Marc Schmidt */}
+              <Card className="border-border shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <CardHeader>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 shadow-md">
+                    <img
+                      src={marcImage}
+                      alt="Marc Schmidt"
+                      className="w-full h-full object-cover"
+                      />
+                  </div>
+                  <CardTitle className="text-center text-foreground text-2xl">Marc Schmidt</CardTitle>
+                  <CardDescription className="text-center text-lg font-medium text-accent">
+                     Fleet Development Executive 
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    We’re excited to welcome Marc Schmidt to First Ring Fleet as our Fleet Development Executive.
+                    Marc will be supporting trades businesses with first-class equipment leasing and fleet management as 
+                    our core vision. Supporting and serving trades businesses with tailored solutions, clear communication,
+                    and a commitment to making fleet leasing and management more efficient, more accessible, and more aligned 
+                    with your business goals.
+                  </p>
+                  <div className="flex justify-center">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="gap-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                      onClick={() => window.open('https://www.linkedin.com/in/marc-schmidt-8748737/', '_blank')}
+                      >
+                      <Linkedin className="w-4 h-4" />
+                      LinkedIn Profile
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+ 
+              {/* Michael Hein */}
+              <Card className="border-border shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <CardHeader>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 shadow-md">
+                    <img
+                      src={michaelImage}
+                      alt="Michael Hein"
+                      className="w-full h-full object-cover"
+                      />
+                  </div>
+                  <CardTitle className="text-center text-foreground text-2xl">Michael Hein</CardTitle>
+                  <CardDescription className="text-center text-lg font-medium text-accent">
+                     Fleet Account Executive
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    We’re excited to welcome Michael Hein to First Ring Fleet as our Fleet Account Executive.
+                    Michael Hein joined the team as Fleet Account Executive. He brings 13 years of industry 
+                    experience supporting businesses across a wide range of fleet sizes, needs, and operating environments.
+                    In his role, Michael works closely with customers to help them navigate fleet decisions with clarity
+                    and confidence, supporting our consultative approach and commitment to long‑term partnerships.
+                  </p>
+                  <div className="flex justify-center">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="gap-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                      onClick={() => window.open('https://www.linkedin.com/in/michael-hein-9a92458b/', '_blank')}
+                      >
+                      <Linkedin className="w-4 h-4" />
+                      LinkedIn Profile
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              
             </div>
           </div>
         </div>
