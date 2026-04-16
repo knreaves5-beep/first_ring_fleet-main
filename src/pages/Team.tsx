@@ -218,10 +218,10 @@ const Team = () => {
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
                     Marc supports First Ring Fleet by guiding customers through complex transportation
-                    decisions, drawing from more than 16 years of experience in equipment leasing and
-                    fleet management. Known for his consultative approach, he builds trusted partnerships
-                    with customers, manufacturers, suppliers, and outfitters to create thoughtful, scalable
-                    solutions that drive long-term value.
+                    decisions, drawing from more than 16 years of experience in equipment leasing 
+                    and fleet management. Known for his consultative approach, he builds 
+                    trusted partnerships with customers, manufacturers, suppliers, and 
+                    outfitters to create thoughtful, scalable solutions that drive long-term value.
                   </p>
                   <div className="flex justify-center">
                     <Button 
