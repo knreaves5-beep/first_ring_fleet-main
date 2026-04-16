@@ -217,11 +217,11 @@ const Team = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    We’re excited to welcome Marc Schmidt to First Ring Fleet as our Fleet Development Executive.
-                    Marc will be supporting trades businesses with first-class equipment leasing and fleet management as 
-                    our core vision. Supporting and serving trades businesses with tailored solutions, clear communication,
-                    and a commitment to making fleet leasing and management more efficient, more accessible, and more aligned 
-                    with your business goals.
+                    Marc supports First Ring Fleet by guiding customers through complex transportation
+                    decisions, drawing from more than 16 years of experience in equipment leasing and
+                    fleet management. Known for his consultative approach, he builds trusted partnerships
+                    with customers, manufacturers, suppliers, and outfitters to create thoughtful, scalable
+                    solutions that drive long-term value.
                   </p>
                   <div className="flex justify-center">
                     <Button 
@@ -254,11 +254,10 @@ const Team = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    We’re excited to welcome Michael Hein to First Ring Fleet as our Fleet Account Executive.
-                    Michael Hein joined the team as Fleet Account Executive. He brings 13 years of industry 
-                    experience supporting businesses across a wide range of fleet sizes, needs, and operating environments.
-                    In his role, Michael works closely with customers to help them navigate fleet decisions with clarity
-                    and confidence, supporting our consultative approach and commitment to long‑term partnerships.
+                   Michael brings 13 years of industry experience to First Ring Fleet, supporting our
+                   customers across a wide range of fleet sizes, needs, and operating environments. 
+                   His broad problem-solving background, paired with a strong customer-focused mindset,
+                   aligns seamlessly with our consultative approach to serving clients.
                   </p>
                   <div className="flex justify-center">
                     <Button 
